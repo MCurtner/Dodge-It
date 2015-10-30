@@ -8,38 +8,66 @@
 
 import SpriteKit
 
+struct SpriteLayers {
+    static let Background: CGFloat = -1
+    static let Road: CGFloat = 0
+    static let RoadDashes: CGFloat = 1
+}
+
 class GameScene: SKScene {
+
+    
+    var movingCenterDashes: MovingDashes!
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 45;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        setupBackground()
+        setupRoad()
         
-        self.addChild(myLabel)
+        movingCenterDashes = MovingDashes(size: CGSizeMake(5, frame.size.height))
+        movingCenterDashes.anchorPoint = CGPointMake(0.5, 0)
+        movingCenterDashes.position = CGPointMake(frame.size.width/2, 0)
+        movingCenterDashes.zPosition = SpriteLayers.RoadDashes
+        addChild(movingCenterDashes)
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
-        
-        for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
+        movingCenterDashes.startAnimatingDashes()
     }
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+    
     }
-}
+    
+    // MARK: - Background Elements
+    
+    func setupBackground() {
+        let background = SKSpriteNode(texture: nil, color: UIColor.greenColor(), size: CGSize(width: frame.size.width, height: frame.size.height))
+        background.position = CGPoint(x: frame.size.width/2, y: frame.size.height/2)
+        //background.color = SKColor.greenColor()
+        background.zPosition = SpriteLayers.Background
+        
+        addChild(background)
+    }
+    
+    
+    func setupRoad() {
+        let road = SKSpriteNode(texture: nil, color: UIColor.blackColor(), size: CGSize(width: 128.0, height: frame.size.height))
+        road.position = CGPoint(x: frame.size.width/2, y: frame.size.height/2)
+        road.zPosition = SpriteLayers.Road
+        
+        setupRoadSides(xPosition: (frame.size.width/2) - 64)
+        setupRoadSides(xPosition: (frame.size.width/2) + 64)
+                
+        addChild(road)
+    }
+    
+    func setupRoadSides(xPosition xPosition: CGFloat) {
+        let whiteMargin = SKSpriteNode(texture: nil, color: UIColor.whiteColor(), size: CGSize(width: 5.0, height: frame.size.height))
+        whiteMargin.position = CGPoint(x: xPosition, y: frame.size.height/2)
+        whiteMargin.zPosition = SpriteLayers.Road
+        
+        addChild(whiteMargin)
+    }
+    
+ }
