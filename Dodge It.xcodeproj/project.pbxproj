@@ -15,6 +15,8 @@
 		34E45C071BE3EA5500B25929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E45C061BE3EA5500B25929 /* Assets.xcassets */; };
 		34E45C0A1BE3EA5500B25929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E45C081BE3EA5500B25929 /* LaunchScreen.storyboard */; };
 		34E45C121BE3F23A00B25929 /* MovingDashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E45C111BE3F23A00B25929 /* MovingDashes.swift */; };
+		34E45C141BE400C000B25929 /* Coins.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 34E45C131BE400C000B25929 /* Coins.atlas */; };
+		34E45C1A1BE40AE600B25929 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E45C191BE40AE600B25929 /* MyUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		34E45C091BE3EA5500B25929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34E45C0B1BE3EA5500B25929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E45C111BE3F23A00B25929 /* MovingDashes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingDashes.swift; sourceTree = "<group>"; };
+		34E45C131BE400C000B25929 /* Coins.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Coins.atlas; sourceTree = "<group>"; };
+		34E45C191BE40AE600B25929 /* MyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +64,17 @@
 		34E45BFA1BE3EA5500B25929 /* Dodge It */ = {
 			isa = PBXGroup;
 			children = (
+				34E45C131BE400C000B25929 /* Coins.atlas */,
 				34E45BFB1BE3EA5500B25929 /* AppDelegate.swift */,
 				34E45BFD1BE3EA5500B25929 /* GameScene.sks */,
 				34E45BFF1BE3EA5500B25929 /* GameScene.swift */,
 				34E45C011BE3EA5500B25929 /* GameViewController.swift */,
+				34E45C111BE3F23A00B25929 /* MovingDashes.swift */,
+				34E45C191BE40AE600B25929 /* MyUtils.swift */,
 				34E45C031BE3EA5500B25929 /* Main.storyboard */,
 				34E45C061BE3EA5500B25929 /* Assets.xcassets */,
 				34E45C081BE3EA5500B25929 /* LaunchScreen.storyboard */,
 				34E45C0B1BE3EA5500B25929 /* Info.plist */,
-				34E45C111BE3F23A00B25929 /* MovingDashes.swift */,
 			);
 			path = "Dodge It";
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 				34E45BFE1BE3EA5500B25929 /* GameScene.sks in Resources */,
 				34E45C0A1BE3EA5500B25929 /* LaunchScreen.storyboard in Resources */,
 				34E45C071BE3EA5500B25929 /* Assets.xcassets in Resources */,
+				34E45C141BE400C000B25929 /* Coins.atlas in Resources */,
 				34E45C051BE3EA5500B25929 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +156,7 @@
 				34E45C001BE3EA5500B25929 /* GameScene.swift in Sources */,
 				34E45C121BE3F23A00B25929 /* MovingDashes.swift in Sources */,
 				34E45C021BE3EA5500B25929 /* GameViewController.swift in Sources */,
+				34E45C1A1BE40AE600B25929 /* MyUtils.swift in Sources */,
 				34E45BFC1BE3EA5500B25929 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +311,7 @@
 				34E45C101BE3EA5500B25929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

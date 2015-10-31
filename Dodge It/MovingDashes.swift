@@ -12,7 +12,7 @@ class MovingDashes: SKSpriteNode {
     
     let kNumberOfSegments = 12
     let color1 = SKColor.whiteColor()
-    let color2 = SKColor.blackColor()
+    let color2 = SKColor.clearColor()
     
     init(size: CGSize) {
         super.init(texture: nil, color: UIColor.clearColor(), size: CGSizeMake(size.width, size.height * 2))
