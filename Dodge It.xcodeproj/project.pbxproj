@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3440E1D71BED1B3300FC1AA2 /* Ambulance.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1CF1BED1B3300FC1AA2 /* Ambulance.png */; };
+		3440E1D81BED1B3300FC1AA2 /* Audi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1D01BED1B3300FC1AA2 /* Audi.png */; };
+		3440E1D91BED1B3300FC1AA2 /* GameOver1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1D11BED1B3300FC1AA2 /* GameOver1.png */; };
+		3440E1DA1BED1B3300FC1AA2 /* Letters.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1D21BED1B3300FC1AA2 /* Letters.png */; };
+		3440E1DB1BED1B3300FC1AA2 /* Mini_truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1D31BED1B3300FC1AA2 /* Mini_truck.png */; };
+		3440E1DC1BED1B3300FC1AA2 /* Police.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1D41BED1B3300FC1AA2 /* Police.png */; };
+		3440E1DD1BED1B3300FC1AA2 /* Sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1D51BED1B3300FC1AA2 /* Sign.png */; };
+		3440E1DE1BED1B3300FC1AA2 /* taxi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3440E1D61BED1B3300FC1AA2 /* taxi.png */; };
+		3440E1E01BED1F0D00FC1AA2 /* GameoverViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3440E1DF1BED1F0D00FC1AA2 /* GameoverViewView.swift */; };
+		34871E9E1BE91DD60083E9BB /* CGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34871E9D1BE91DD60083E9BB /* CGButton.swift */; };
 		34E45BFC1BE3EA5500B25929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E45BFB1BE3EA5500B25929 /* AppDelegate.swift */; };
 		34E45BFE1BE3EA5500B25929 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 34E45BFD1BE3EA5500B25929 /* GameScene.sks */; };
 		34E45C001BE3EA5500B25929 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E45BFF1BE3EA5500B25929 /* GameScene.swift */; };
@@ -17,9 +27,21 @@
 		34E45C121BE3F23A00B25929 /* MovingDashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E45C111BE3F23A00B25929 /* MovingDashes.swift */; };
 		34E45C141BE400C000B25929 /* Coins.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 34E45C131BE400C000B25929 /* Coins.atlas */; };
 		34E45C1A1BE40AE600B25929 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E45C191BE40AE600B25929 /* MyUtils.swift */; };
+		34E45C1D1BE542A800B25929 /* coinSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34E45C1B1BE542A800B25929 /* coinSound.wav */; };
+		34E45C221BE54A2A00B25929 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E45C211BE54A2A00B25929 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3440E1CF1BED1B3300FC1AA2 /* Ambulance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ambulance.png; sourceTree = "<group>"; };
+		3440E1D01BED1B3300FC1AA2 /* Audi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audi.png; sourceTree = "<group>"; };
+		3440E1D11BED1B3300FC1AA2 /* GameOver1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameOver1.png; sourceTree = "<group>"; };
+		3440E1D21BED1B3300FC1AA2 /* Letters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Letters.png; sourceTree = "<group>"; };
+		3440E1D31BED1B3300FC1AA2 /* Mini_truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mini_truck.png; sourceTree = "<group>"; };
+		3440E1D41BED1B3300FC1AA2 /* Police.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Police.png; sourceTree = "<group>"; };
+		3440E1D51BED1B3300FC1AA2 /* Sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sign.png; sourceTree = "<group>"; };
+		3440E1D61BED1B3300FC1AA2 /* taxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taxi.png; sourceTree = "<group>"; };
+		3440E1DF1BED1F0D00FC1AA2 /* GameoverViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameoverViewView.swift; sourceTree = "<group>"; };
+		34871E9D1BE91DD60083E9BB /* CGButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGButton.swift; sourceTree = "<group>"; };
 		34E45BF81BE3EA5500B25929 /* Dodge It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dodge It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E45BFB1BE3EA5500B25929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E45BFD1BE3EA5500B25929 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -32,6 +54,8 @@
 		34E45C111BE3F23A00B25929 /* MovingDashes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingDashes.swift; sourceTree = "<group>"; };
 		34E45C131BE400C000B25929 /* Coins.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Coins.atlas; sourceTree = "<group>"; };
 		34E45C191BE40AE600B25929 /* MyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
+		34E45C1B1BE542A800B25929 /* coinSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coinSound.wav; sourceTree = "<group>"; };
+		34E45C211BE54A2A00B25929 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +88,16 @@
 		34E45BFA1BE3EA5500B25929 /* Dodge It */ = {
 			isa = PBXGroup;
 			children = (
+				3440E1DF1BED1F0D00FC1AA2 /* GameoverViewView.swift */,
+				3440E1CF1BED1B3300FC1AA2 /* Ambulance.png */,
+				3440E1D01BED1B3300FC1AA2 /* Audi.png */,
+				3440E1D11BED1B3300FC1AA2 /* GameOver1.png */,
+				3440E1D21BED1B3300FC1AA2 /* Letters.png */,
+				3440E1D31BED1B3300FC1AA2 /* Mini_truck.png */,
+				3440E1D41BED1B3300FC1AA2 /* Police.png */,
+				3440E1D51BED1B3300FC1AA2 /* Sign.png */,
+				3440E1D61BED1B3300FC1AA2 /* taxi.png */,
+				34E45C1B1BE542A800B25929 /* coinSound.wav */,
 				34E45C131BE400C000B25929 /* Coins.atlas */,
 				34E45BFB1BE3EA5500B25929 /* AppDelegate.swift */,
 				34E45BFD1BE3EA5500B25929 /* GameScene.sks */,
@@ -75,6 +109,8 @@
 				34E45C061BE3EA5500B25929 /* Assets.xcassets */,
 				34E45C081BE3EA5500B25929 /* LaunchScreen.storyboard */,
 				34E45C0B1BE3EA5500B25929 /* Info.plist */,
+				34E45C211BE54A2A00B25929 /* GameOverScene.swift */,
+				34871E9D1BE91DD60083E9BB /* CGButton.swift */,
 			);
 			path = "Dodge It";
 			sourceTree = "<group>";
@@ -139,10 +175,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				34E45BFE1BE3EA5500B25929 /* GameScene.sks in Resources */,
+				3440E1DE1BED1B3300FC1AA2 /* taxi.png in Resources */,
 				34E45C0A1BE3EA5500B25929 /* LaunchScreen.storyboard in Resources */,
 				34E45C071BE3EA5500B25929 /* Assets.xcassets in Resources */,
+				34E45C1D1BE542A800B25929 /* coinSound.wav in Resources */,
+				3440E1D91BED1B3300FC1AA2 /* GameOver1.png in Resources */,
 				34E45C141BE400C000B25929 /* Coins.atlas in Resources */,
+				3440E1DB1BED1B3300FC1AA2 /* Mini_truck.png in Resources */,
 				34E45C051BE3EA5500B25929 /* Main.storyboard in Resources */,
+				3440E1DA1BED1B3300FC1AA2 /* Letters.png in Resources */,
+				3440E1DD1BED1B3300FC1AA2 /* Sign.png in Resources */,
+				3440E1DC1BED1B3300FC1AA2 /* Police.png in Resources */,
+				3440E1D81BED1B3300FC1AA2 /* Audi.png in Resources */,
+				3440E1D71BED1B3300FC1AA2 /* Ambulance.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34871E9E1BE91DD60083E9BB /* CGButton.swift in Sources */,
 				34E45C001BE3EA5500B25929 /* GameScene.swift in Sources */,
 				34E45C121BE3F23A00B25929 /* MovingDashes.swift in Sources */,
 				34E45C021BE3EA5500B25929 /* GameViewController.swift in Sources */,
 				34E45C1A1BE40AE600B25929 /* MyUtils.swift in Sources */,
+				3440E1E01BED1F0D00FC1AA2 /* GameoverViewView.swift in Sources */,
+				34E45C221BE54A2A00B25929 /* GameOverScene.swift in Sources */,
 				34E45BFC1BE3EA5500B25929 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

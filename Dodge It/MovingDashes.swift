@@ -46,5 +46,9 @@ class MovingDashes: SKSpriteNode {
         
         runAction(SKAction.repeatActionForever(sequence))
     }
+
+    func stopAnimatingDashes() {
+        removeAllActions()
+    }
     
 }
